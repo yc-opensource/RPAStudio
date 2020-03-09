@@ -1,0 +1,7 @@
+.vs/*
+DesktopGrab
+*/GeneratedFiles
+/Activities/nupkgs/**
+/Activities/*/bin
+/Activities/*/obj
+./UpgradeLog.htm
