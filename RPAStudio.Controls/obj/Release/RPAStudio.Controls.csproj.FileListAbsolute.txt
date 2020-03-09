@@ -1,0 +1,12 @@
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\bin\Release\RPAStudio.Controls.dll
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\bin\Release\RPAStudio.Controls.pdb
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\GeneratedInternalTypeHelper.g.cs
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\RPAStudio.Controls_MarkupCompile.cache
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\RPAStudio.Controls_MarkupCompile.lref
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\Themes\Generic.baml
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\RPAStudio.Controls.g.resources
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\RPAStudio.Controls.Properties.Resources.resources
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\RPAStudio.Controls.csproj.GenerateResource.cache
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\RPAStudio.Controls.dll
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\RPAStudio.Controls.pdb
+F:\code\MoRPA\RPAStudio\RPAStudio.Controls\obj\Release\RPAStudio.Controls.csprojAssemblyReference.cache

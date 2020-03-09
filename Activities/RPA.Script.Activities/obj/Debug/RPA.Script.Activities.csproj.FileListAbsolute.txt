@@ -1,0 +1,16 @@
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\bin\Debug\RPA.Script.Activities.dll.config
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\bin\Debug\RPA.Script.Activities.dll
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\bin\Debug\RPA.Script.Activities.pdb
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\bin\Debug\Python.Runtime.dll
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\RPA.Script.Activities.csprojAssemblyReference.cache
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\Python\InvokePythonFileDesigner.baml
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\Python\InvokePythonScriptDesigner.baml
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\Python\InvokePythonFileDesigner.g.cs
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\Python\InvokePythonScriptDesigner.g.cs
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\RPA.Script.Activities_MarkupCompile.cache
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\RPA.Script.Activities.g.resources
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\RPA.Script.Activities.Properties.Resources.resources
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\RPA.Script.Activities.csproj.GenerateResource.cache
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\RPA.Script.Activities.csproj.CopyComplete
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\RPA.Script.Activities.dll
+F:\code\MoRPA\RPAStudio\Activities\RPA.Script.Activities\obj\Debug\RPA.Script.Activities.pdb

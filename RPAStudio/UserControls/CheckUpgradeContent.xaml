@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="RPAStudio.UserControls.CheckUpgradeContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RPAStudio.UserControls"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+             mc:Ignorable="d" 
+             DataContext="{Binding CheckUpgrade, Source={StaticResource Locator}}"
+             d:DesignHeight="600" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style TargetType="TextBlock" x:Key="Description">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="0,0,0,8"/>
+        </Style>
+    </UserControl.Resources>
+
+        
+    
+</UserControl>

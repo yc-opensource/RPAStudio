@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>Surviveplus.WpfLocalization</name>
+    </assembly>
+    <members>
+        <member name="T:Net.Surviveplus.Localization.WpfLocalization">
+            <summary>
+                <para>WPF XAML 要素を x:Uid 属性とリソースファイルを使用してローカライズします。</para>
+            </summary>
+        </member>
+        <member name="M:Net.Surviveplus.Localization.WpfLocalization.ApplyResources(System.Windows.DependencyObject,System.Resources.ResourceManager)">
+            <summary>
+                <para>指定されたユーザーコントロールの中で、x:Uid プロパティで指定されたリソースに定義があるものを、全て置き換えます。</para>
+            </summary>
+            <param name="userControl">
+                <para>テキストをローカライズするユーザーコントロールを指定します。</para>
+            </param>
+            <param name="resourceManager">
+                <para>
+            ローカライズされたリソースを扱う ResourceManager を指定します。
+            XAML で &lt;Button x:Uid="formatButton" /&gt;  と指定した場合は、リソースの Name は formatButton.Content となります。
+            </para>
+            </param>
+            <remarks>
+                <para>例えば、.xaml.cs ファイルのコンストラクタで、InitializeComponent の後で、以下のように指定してください。</para>
+                <para>
+            WpfLocalization.ApplyResources(this, Properties.Resources.ResourceManager);
+            </para>
+                <para>現バージョンで対応しているのは、以下のクラスとプロパティです。</para>
+                <para>
+            TexBlock.Text, TextBox.Text, Button.Content, CheckBox.Content, RadioButton.Content, CheckBox.ToolTip, RadioButton.ToolTip.
+            </para>
+            </remarks>
+        </member>
+    </members>
+</doc>

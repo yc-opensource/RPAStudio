@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Settings schemaVersion="1.0.0"> 
+  <UserSettings>
+    <IsAutoRun>False</IsAutoRun>
+    <IsAutoOpenMainWindow>True</IsAutoOpenMainWindow>
+    <IsEnableScreenRecorder>False</IsEnableScreenRecorder>
+    <FPS>30</FPS>
+    <Quality>50</Quality>
+  </UserSettings> 
+</Settings>

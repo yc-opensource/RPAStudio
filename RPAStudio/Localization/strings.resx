@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="settings_language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="settings_language_tip" xml:space="preserve">
+    <value>更改 Studio 界面显示语言（重启后生效）</value>
+  </data>
+  <data name="settings_theme" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="settings_theme_tip" xml:space="preserve">
+    <value>更改 Studio 界面主题</value>
+  </data>
+  <data name="settings_general" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="settings_design" xml:space="preserve">
+    <value>设计</value>
+  </data>
+  <data name="start_openrecent" xml:space="preserve">
+    <value>打开最近的内容</value>
+  </data>
+  <data name="start_newproject" xml:space="preserve">
+    <value>新建项目</value>
+  </data>
+  <data name="start_newproject_process" xml:space="preserve">
+    <value>流程</value>
+  </data>
+  <data name="start_newproject_process_tip" xml:space="preserve">
+    <value>新建一个自动化的空白流程</value>
+  </data>
+  <data name="main_start" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="main_open" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="main_close" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="main_settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="main_loading" xml:space="preserve">
+    <value>正在加载……</value>
+  </data>
+  <data name="main_help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="start_open" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="start_openproject" xml:space="preserve">
+    <value>打开本地项目</value>
+  </data>
+  <data name="start_openproject_tip" xml:space="preserve">
+    <value>浏览并打开现有项目</value>
+  </data>
+  <data name="dock_projects" xml:space="preserve">
+    <value>项目</value>
+  </data>
+  <data name="dock_activities" xml:space="preserve">
+    <value>活动</value>
+  </data>
+  <data name="dock_code_snippets" xml:space="preserve">
+    <value>代码片段</value>
+  </data>
+  <data name="dock_properties" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="dock_outline" xml:space="preserve">
+    <value>大纲</value>
+  </data>
+  <data name="dock_output" xml:space="preserve">
+    <value>输出</value>
+  </data>
+  <data name="main_update" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="main_design" xml:space="preserve">
+    <value>设计</value>
+  </data>
+  <data name="main_file" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="main_new" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="main_sequence" xml:space="preserve">
+    <value>序列图</value>
+  </data>
+  <data name="main_flowchart" xml:space="preserve">
+    <value>流程图</value>
+  </data>
+  <data name="main_state_machine" xml:space="preserve">
+    <value>状态机</value>
+  </data>
+  <data name="main_sequence_tip" xml:space="preserve">
+    <value>序列图（Ctrl+N）</value>
+  </data>
+  <data name="main_save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="main_save_tip" xml:space="preserve">
+    <value>保存（Ctrl+S）</value>
+  </data>
+  <data name="main_save_as" xml:space="preserve">
+    <value>另存为</value>
+  </data>
+  <data name="main_save_all" xml:space="preserve">
+    <value>全部保存</value>
+  </data>
+  <data name="main_save_all_tip" xml:space="preserve">
+    <value>全部保存（Ctrl+Shift+S）</value>
+  </data>
+  <data name="main_run" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="main_run_tip" xml:space="preserve">
+    <value>运行（F5）</value>
+  </data>
+  <data name="main_edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="main_cut" xml:space="preserve">
+    <value>剪切</value>
+  </data>
+  <data name="main_copy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="main_paste" xml:space="preserve">
+    <value>粘贴</value>
+  </data>
+  <data name="main_dependency" xml:space="preserve">
+    <value>依赖</value>
+  </data>
+  <data name="main_package_manager" xml:space="preserve">
+    <value>包管理器</value>
+  </data>
+  <data name="main_package_manager_tip" xml:space="preserve">
+    <value>管理nupkg包，实现安装、卸载、更新包等操作（Ctrl+P）</value>
+  </data>
+  <data name="main_operation" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="main_recording" xml:space="preserve">
+    <value>录制</value>
+  </data>
+  <data name="main_recording_tip" xml:space="preserve">
+    <value>一次性录制多个活动</value>
+  </data>
+  <data name="main_deploy" xml:space="preserve">
+    <value>部署</value>
+  </data>
+  <data name="main_publish" xml:space="preserve">
+    <value>发布</value>
+  </data>
+  <data name="main_publish_tip" xml:space="preserve">
+    <value>打包发布</value>
+  </data>
+  <data name="main_execution" xml:space="preserve">
+    <value>执行</value>
+  </data>
+  <data name="main_start_up" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="main_stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="main_stop_tip" xml:space="preserve">
+    <value>停止（F12）</value>
+  </data>
+  <data name="main_debug" xml:space="preserve">
+    <value>调试</value>
+  </data>
+  <data name="main_break" xml:space="preserve">
+    <value>中断</value>
+  </data>
+  <data name="main_break_tip" xml:space="preserve">
+    <value>中断执行（暂停）</value>
+  </data>
+  <data name="main_step_into" xml:space="preserve">
+    <value>逐语句</value>
+  </data>
+  <data name="main_step_into_tip" xml:space="preserve">
+    <value>逐语句（F11）</value>
+  </data>
+  <data name="main_step_over" xml:space="preserve">
+    <value>逐过程</value>
+  </data>
+  <data name="main_step_over_tip" xml:space="preserve">
+    <value>逐过程（F10）</value>
+  </data>
+  <data name="main_validate" xml:space="preserve">
+    <value>校验</value>
+  </data>
+  <data name="main_validate_tip" xml:space="preserve">
+    <value>检查错误（F8）</value>
+  </data>
+  <data name="main_breakpoint" xml:space="preserve">
+    <value>断点</value>
+  </data>
+  <data name="main_toggle_breakpoint" xml:space="preserve">
+    <value>切换断点</value>
+  </data>
+  <data name="main_toggle_breakpoint_tip" xml:space="preserve">
+    <value>切换断点（F9）</value>
+  </data>
+  <data name="main_remove_all_breakpoints" xml:space="preserve">
+    <value>清除所有断点</value>
+  </data>
+  <data name="main_remove_all_breakpoints_tip" xml:space="preserve">
+    <value>清除所有断点（Shift+F9）</value>
+  </data>
+  <data name="main_slow_debugging" xml:space="preserve">
+    <value>慢速调试</value>
+  </data>
+  <data name="main_slow_debugging_tip" xml:space="preserve">
+    <value>以最慢的1x到最快4x进行不同速度的调试运行</value>
+  </data>
+  <data name="main_options" xml:space="preserve">
+    <value>选项</value>
+  </data>
+  <data name="main_highlight_elements" xml:space="preserve">
+    <value>高亮元素</value>
+  </data>
+  <data name="main_log_activities" xml:space="preserve">
+    <value>记录活动</value>
+  </data>
+  <data name="main_break_on_exceptions" xml:space="preserve">
+    <value>异常时中断</value>
+  </data>
+  <data name="main_logs" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="main_open_logs" xml:space="preserve">
+    <value>打开日志</value>
+  </data>
+  <data name="main_open_logs_tip" xml:space="preserve">
+    <value>打开日志（Ctrl+L）</value>
+  </data>
+  <data name="settings_check_update" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="settings_upgrade" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="help_check_for_update_btn_text" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="help_checking_for_update_btn_text" xml:space="preserve">
+    <value>正在检查更新</value>
+  </data>
+  <data name="help_no_need_to_update" xml:space="preserve">
+    <value>当前为最新版本，无需升级！</value>
+  </data>
+  <data name="help_download_btn_text" xml:space="preserve">
+    <value>下载更新</value>
+  </data>
+  <data name="start_opendir_tip" xml:space="preserve">
+    <value>打开项目所在目录</value>
+  </data>
+  <data name="start_delete_tip" xml:space="preserve">
+    <value>从最近列表中移除此项</value>
+  </data>
+  <data name="settings_other" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="settings_other_tip" xml:space="preserve">
+    <value>更改软件其他设置</value>
+  </data>
+  <data name="settings_clear_cache" xml:space="preserve">
+    <value>清除缓存</value>
+  </data>
+  <data name="settings_nuget_tip" xml:space="preserve">
+    <value>Nuget 相关设置</value>
+  </data>
+</root>

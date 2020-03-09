@@ -1,0 +1,140 @@
+﻿<UserControl x:Class="RPAStudio.UserControls.HelpContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:l="clr-namespace:RPAStudio.Localization"
+             xmlns:local="clr-namespace:RPAStudio.UserControls"
+             xmlns:vm="clr-namespace:RPAStudio.ViewModel"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:command="http://www.galasoft.ch/mvvmlight"
+             mc:Ignorable="d" 
+             DataContext="{Binding Help,Source={StaticResource Locator}}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,0,0,4"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontFamily" Value="Consolas"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,0,0,8"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid Margin="20,80,20,20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*" MinWidth="240"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <local:StartSectionTitle Title="{x:Static l:strings.main_help}"/>
+            <ListView ItemsSource="{Binding Helps}"
+                      Background="Transparent"
+                      Margin="0,8,0,0"
+                      BorderThickness="0">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListViewItem">
+                                    <Border Padding="0,4"
+                                            Margin="0,0,0,4"
+                                            BorderThickness="0"
+                                            Cursor="Hand"
+                                            Background="{TemplateBinding Background}">
+                                        <ContentPresenter/>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="{DynamicResource GrayBrush8}"/>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate DataType="{x:Type vm:HelpItem}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="8"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding Image}"
+                                   Height="40"
+                                   Width="40"/>
+                            <Grid Grid.Column="2">
+                                <TextBlock Text="{Binding Title}"
+                                               FontWeight="Bold"
+                                           Foreground="{DynamicResource GrayBrush1}"/>
+                                <TextBlock Text="{Binding Description}"
+                                               Foreground="{DynamicResource GrayBrush2}"
+                                               VerticalAlignment="Bottom"/>
+                            </Grid>
+
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="PreviewMouseLeftButtonUp">
+                                    <command:EventToCommand Command="{Binding ClickCommand}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+        <Border Grid.Column="2"
+                Padding="20,0,0,0"
+                BorderThickness="1,0,0,0"
+                BorderBrush="{DynamicResource GrayBrush2}">
+            <StackPanel HorizontalAlignment="Center">
+                <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Center"
+                            Margin="0,0,0,8">
+                    <Image Source="/Resources/Ico/logo.ico"
+                           Width="50"
+                           Margin="0,0,0,8"/>
+                    <TextBlock Text="©yunstorm.com"
+                               FontSize="14"
+                               FontWeight="Bold"
+                               VerticalAlignment="Center"/>
+                </StackPanel>
+                <TextBlock Text="{Binding CurrentVersionName, Mode=OneWay}"/>
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center">
+                    <TextBlock Text="License: "
+                               VerticalAlignment="Center"/>
+                    <Label>
+                        <Label.Content>
+                            <Hyperlink NavigateUri="https://gitee.com/rpa_ai/RPAStudio/blob/master/LICENSE">GPL 3.0</Hyperlink>
+                        </Label.Content>
+                    </Label>
+                </StackPanel>
+                <TextBlock Text="杭州云策网络技术有限公司"/>
+
+                <Grid Margin="0,8,0,0">
+                    <Button Content="{Binding DownloadButtonText}"
+                        Visibility="{Binding IsDownloadButtonVisible, Mode=OneWay, Converter={StaticResource BoolVisibilityConverter}}"
+                            Command="{Binding DoUpgradeCommand}"/>
+                    <Button Content="{Binding UpgradeButtonText}"
+                        Command="{Binding CheckUpgradeCommand}"
+                        Visibility="{Binding IsDownloadButtonVisible, Mode=OneWay, Converter={StaticResource BoolNotVisibilityConverter}}"/>
+                </Grid>
+
+                <StackPanel Margin="0,12,0,0"
+                            Visibility="{Binding IsShowLatestVersionUpdateLog, Converter={StaticResource BoolVisibilityConverter}}">
+                    <TextBlock Text="{Binding LatestVersionName}"/>
+                    <TextBlock Text="{Binding LatestVersionUpdateLog}"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

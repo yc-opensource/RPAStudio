@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlaUI.UIA2</name>
+    </assembly>
+    <members>
+        <member name="T:FlaUI.UIA2.Converters.AutomationElementConverter">
+            <summary>
+            Class that helps converting automation elements.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.Converters.AutomationElementConverter.NativeArrayToManaged(FlaUI.Core.AutomationBase,System.Object)">
+            <summary>
+            Converts a native array of elements to an array of managed elements.
+            </summary>
+            <param name="automation">The automation to use for the conversion.</param>
+            <param name="nativeElements">The native array to convert.</param>
+            <returns>The array of managed elements.</returns>
+        </member>
+        <member name="M:FlaUI.UIA2.Converters.AutomationElementConverter.NativeToManaged(FlaUI.Core.AutomationBase,System.Object)">
+            <summary>
+            Converts a native element to a managed element.
+            </summary>
+            <param name="automation">The automation to use for the conversion.</param>
+            <param name="nativeElement">The native element to convert.</param>
+            <returns>The converted managed element.</returns>
+        </member>
+        <member name="M:FlaUI.UIA2.Converters.AutomationElementConverter.ToNative(FlaUI.Core.AutomationElements.AutomationElement)">
+            <summary>
+            Converts a managed element to a native element.
+            </summary>
+            <param name="automationElement">The managed element to convert.</param>
+            <returns>The converted native element.</returns>
+        </member>
+        <member name="T:FlaUI.UIA2.Converters.ConditionConverter">
+            <summary>
+            Class which helps converting conditions between native and FlaUIs conditions.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.Converters.ConditionConverter.ToNative(FlaUI.Core.Conditions.ConditionBase)">
+            <summary>
+            Converts a FlaUI <see cref="T:FlaUI.Core.Conditions.ConditionBase"/> to a native condition.
+            </summary>
+            <param name="condition">The condition to convert.</param>
+            <returns>The native condition.</returns>
+        </member>
+        <member name="T:FlaUI.UIA2.Converters.ControlTypeConverter">
+            <summary>
+            Converter with converts between <see cref="T:System.Windows.Automation.ControlType"/> and FlaUIs <see cref="T:FlaUI.Core.Definitions.ControlType"/>.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.Converters.ControlTypeConverter.ToControlType(System.Object)">
+            <summary>
+            Converts a <see cref="T:System.Windows.Automation.ControlType"/> to a FlaUI <see cref="T:FlaUI.Core.Definitions.ControlType"/>.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.Converters.ControlTypeConverter.ToControlTypeNative(FlaUI.Core.Definitions.ControlType)">
+            <summary>
+            Converts a FlaUI <see cref="T:FlaUI.Core.Definitions.ControlType"/> to a <see cref="T:System.Windows.Automation.ControlType"/>.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.Converters.ValueConverter">
+            <summary>
+            Class that helps converting various values between native and FlaUIs format.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.Converters.ValueConverter.ToNative(System.Object)">
+            <summary>
+            Converts the given object to an object the native client expects
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.Converters.ValueConverter.ToRectangle(System.Object)">
+            <summary>
+            Converts a native rectangle to a <see cref="T:System.Drawing.Rectangle"/>.
+            </summary>
+            <param name="rectangle">The native rectangle to convert.</param>
+            <returns>The converted managed rectangle.</returns>
+        </member>
+        <member name="T:FlaUI.UIA2.EventHandlers.UIA2FocusChangedEventHandler">
+            <summary>
+            UIA2 implementation of a focus changed event handler.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.EventHandlers.UIA2PropertyChangedEventHandler">
+            <summary>
+            UIA2 implementation of a property changed event handler.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.EventHandlers.UIA2StructureChangedEventHandler">
+            <summary>
+            UIA2 implementation of a structure changed event handler.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.Identifiers.AutomationObjectIds">
+            <summary>
+            Class that holds all automation object ids available.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.Identifiers.TextAttributes">
+            <summary>
+            Class that holds all text attribute ids available.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.Patterns.InvokePattern">
+            <summary>
+            Class for an UIA2 <see cref="T:FlaUI.Core.Patterns.IInvokePattern"/>.
+            </summary>
+        </member>
+        <member name="F:FlaUI.UIA2.Patterns.InvokePattern.Pattern">
+            <summary>
+            The <see cref="T:FlaUI.Core.Identifiers.PatternId"/> for this pattern.
+            </summary>
+        </member>
+        <member name="F:FlaUI.UIA2.Patterns.InvokePattern.InvokedEvent">
+            <summary>
+            The <see cref="T:FlaUI.Core.Identifiers.EventId"/> for the invoked event.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.Patterns.InvokePattern.#ctor(FlaUI.Core.FrameworkAutomationElementBase,System.Windows.Automation.InvokePattern)">
+            <summary>
+            Creates an UIA2 <see cref="T:FlaUI.Core.Patterns.IInvokePattern"/>.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.Patterns.InvokePattern.Invoke">
+            <inheritdoc />
+        </member>
+        <member name="T:FlaUI.UIA2.Patterns.InvokePatternEventIds">
+            <summary>
+            Class for UIA2 <see cref="T:FlaUI.Core.Patterns.IInvokePatternEventIds"/>.
+            </summary>
+        </member>
+        <member name="P:FlaUI.UIA2.Patterns.InvokePatternEventIds.InvokedEvent">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.Patterns.ValuePattern.SetValue(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2Automation">
+            <summary>
+            Automation implementation for UIA2.
+            </summary>
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2Automation.TreeWalkerFactory">
+            <inheritdoc />
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2Automation.AutomationType">
+            <inheritdoc />
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2Automation.NotSupportedValue">
+            <inheritdoc />
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2Automation.TransactionTimeout">
+            <inheritdoc />
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2Automation.ConnectionTimeout">
+            <inheritdoc />
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2Automation.ConnectionRecoveryBehavior">
+            <inheritdoc />
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2Automation.CoalesceEvents">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.GetDesktop">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.FromPoint(System.Drawing.Point)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.FromHandle(System.IntPtr)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.FocusedElement">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.RegisterFocusChangedEvent(System.Action{FlaUI.Core.AutomationElements.AutomationElement})">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.UnregisterFocusChangedEvent(FlaUI.Core.EventHandlers.FocusChangedEventHandlerBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.UnregisterAllEvents">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.Compare(FlaUI.Core.AutomationElements.AutomationElement,FlaUI.Core.AutomationElements.AutomationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2Automation.InternalGetNativeElement(System.Func{System.Windows.Automation.AutomationElement})">
+            <summary>
+            Gets the native element according to the passed action. Uses caching if it is active.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2AutomationElementEventIds">
+            <summary>
+            Partial class with additions from .NET 4.7.1
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2AutomationElementPatternAvailabilityPropertyIds">
+            <summary>
+            Partial class with additions from .NET 4.0
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2AutomationElementPropertyIds">
+            <summary>
+            Partial class with additions from .NET 4.7.1
+            </summary>
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2FrameworkAutomationElement.Automation">
+            <summary>
+            Concrete implementation of the automation object
+            </summary>
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2FrameworkAutomationElement.NativeElement">
+            <summary>
+            Native object for the ui element
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.SetFocus">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.InternalGetPropertyValue(System.Int32,System.Boolean,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.InternalGetPattern(System.Int32,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.FindAll(FlaUI.Core.Definitions.TreeScope,FlaUI.Core.Conditions.ConditionBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.FindFirst(FlaUI.Core.Definitions.TreeScope,FlaUI.Core.Conditions.ConditionBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.FindAllWithOptions(FlaUI.Core.Definitions.TreeScope,FlaUI.Core.Conditions.ConditionBase,FlaUI.Core.Definitions.TreeTraversalOptions,FlaUI.Core.AutomationElements.AutomationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.FindFirstWithOptions(FlaUI.Core.Definitions.TreeScope,FlaUI.Core.Conditions.ConditionBase,FlaUI.Core.Definitions.TreeTraversalOptions,FlaUI.Core.AutomationElements.AutomationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.FindAt(FlaUI.Core.Definitions.TreeScope,System.Int32,FlaUI.Core.Conditions.ConditionBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.TryGetClickablePoint(System.Drawing.Point@)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.RegisterActiveTextPositionChangedEvent(FlaUI.Core.Definitions.TreeScope,System.Action{FlaUI.Core.AutomationElements.AutomationElement,FlaUI.Core.ITextRange})">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.RegisterAutomationEvent(FlaUI.Core.Identifiers.EventId,FlaUI.Core.Definitions.TreeScope,System.Action{FlaUI.Core.AutomationElements.AutomationElement,FlaUI.Core.Identifiers.EventId})">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.RegisterPropertyChangedEvent(FlaUI.Core.Definitions.TreeScope,System.Action{FlaUI.Core.AutomationElements.AutomationElement,FlaUI.Core.Identifiers.PropertyId,System.Object},FlaUI.Core.Identifiers.PropertyId[])">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.RegisterStructureChangedEvent(FlaUI.Core.Definitions.TreeScope,System.Action{FlaUI.Core.AutomationElements.AutomationElement,FlaUI.Core.Definitions.StructureChangeType,System.Int32[]})">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.RegisterNotificationEvent(FlaUI.Core.Definitions.TreeScope,System.Action{FlaUI.Core.AutomationElements.AutomationElement,FlaUI.Core.Definitions.NotificationKind,FlaUI.Core.Definitions.NotificationProcessing,System.String,System.String})">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.RegisterTextEditTextChangedEventHandler(FlaUI.Core.Definitions.TreeScope,FlaUI.Core.Definitions.TextEditChangeType,System.Action{FlaUI.Core.AutomationElements.AutomationElement,FlaUI.Core.Definitions.TextEditChangeType,System.String[]})">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.UnregisterActiveTextPositionChangedEventHandler(FlaUI.Core.EventHandlers.ActiveTextPositionChangedEventHandlerBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.UnregisterAutomationEventHandler(FlaUI.Core.EventHandlers.AutomationEventHandlerBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.UnregisterPropertyChangedEventHandler(FlaUI.Core.EventHandlers.PropertyChangedEventHandlerBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.UnregisterStructureChangedEventHandler(FlaUI.Core.EventHandlers.StructureChangedEventHandlerBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.UnregisterNotificationEventHandler(FlaUI.Core.EventHandlers.NotificationEventHandlerBase)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2FrameworkAutomationElement.UnregisterTextEditTextChangedEventHandler(FlaUI.Core.EventHandlers.TextEditTextChangedEventHandlerBase)">
+            <inheritdoc />
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2PatternLibrary">
+            <summary>
+            Implements a pattern library for the UIA2 patterns.
+            </summary>
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2PatternLibrary.AllForCurrentFramework">
+            <inheritdoc />
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2PropertyLibrary">
+            <summary>
+            Implements a property library for the UIA2 patterns.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2TextAttributeLibrary">
+            <summary>
+            Implements a text attribute library for the UIA2 text attributes.
+            </summary>
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2TreeWalker">
+            <summary>
+            Class for a UIA2 tree walker.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalker.#ctor(FlaUI.UIA2.UIA2Automation,System.Windows.Automation.TreeWalker)">
+            <summary>
+            Creates a UIA2 tree walker.
+            </summary>
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2TreeWalker.Automation">
+            <summary>
+            The current <see cref="T:FlaUI.Core.AutomationBase"/> object.
+            </summary>
+        </member>
+        <member name="P:FlaUI.UIA2.UIA2TreeWalker.NativeTreeWalker">
+            <summary>
+            The native tree walker object.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalker.GetParent(FlaUI.Core.AutomationElements.AutomationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalker.GetFirstChild(FlaUI.Core.AutomationElements.AutomationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalker.GetLastChild(FlaUI.Core.AutomationElements.AutomationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalker.GetNextSibling(FlaUI.Core.AutomationElements.AutomationElement)">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalker.GetPreviousSibling(FlaUI.Core.AutomationElements.AutomationElement)">
+            <inheritdoc />
+        </member>
+        <member name="T:FlaUI.UIA2.UIA2TreeWalkerFactory">
+            <summary>
+            Factory to create tree walkers for UIA2.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalkerFactory.#ctor(FlaUI.UIA2.UIA2Automation)">
+            <summary>
+            Creates a UIA2 tree walker factory.
+            </summary>
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalkerFactory.GetControlViewWalker">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalkerFactory.GetContentViewWalker">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalkerFactory.GetRawViewWalker">
+            <inheritdoc />
+        </member>
+        <member name="M:FlaUI.UIA2.UIA2TreeWalkerFactory.GetCustomTreeWalker(FlaUI.Core.Conditions.ConditionBase)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

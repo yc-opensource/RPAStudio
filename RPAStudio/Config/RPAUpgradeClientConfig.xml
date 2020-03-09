@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--该配置文件放在客户端-->
+<RPAUpgradeClientConfig>
+  <RPAUpgradeServerConfig Url="https://localhost:44311/download/RPAUpgradeServerConfig.xml" />
+  <!--更新日志-->
+  <UpdateLog>
+    <Item>浏览器、凭证和Word插件修改</Item>
+    <Item>设计器功能优化</Item>
+    <Item>其它已知问题修复</Item>
+  </UpdateLog>
+</RPAUpgradeClientConfig>

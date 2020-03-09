@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CA0253E-687C-4B32-A64D-26FDCBB33AB2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPARobot</RootNamespace>
+    <AssemblyName>RPARobot</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;ENABLE_AUTHORIZATION_CHECK--</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Ico\RPARobot.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Core.Presentation" />
+    <Reference Include="System.Activities.DurableInstancing" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Config\MapsterConfig.cs" />
+    <Compile Include="Config\RPARobot.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>RPARobot.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Executor\RunManager.cs" />
+    <Compile Include="Jobs\RemoveExpiredTaskJob.cs" />
+    <Compile Include="Jobs\RunFlowJob.cs" />
+    <Compile Include="Librarys\ButtonExt.cs" />
+    <Compile Include="Librarys\CLIManager.cs" />
+    <Compile Include="Librarys\Common.cs" />
+    <Compile Include="Librarys\CronHelper.cs" />
+    <Compile Include="Librarys\Extensions.cs" />
+    <Compile Include="Librarys\Logger.cs" />
+    <Compile Include="Librarys\QuartzHelper.cs" />
+    <Compile Include="Librarys\UIExtend.cs" />
+    <Compile Include="Models\Cycle.cs" />
+    <Compile Include="Models\FlowDetail.cs" />
+    <Compile Include="Models\ScheduledTask.cs" />
+    <Compile Include="Models\TaskScheduleModel.cs" />
+    <Compile Include="Navigation\MenuItem.cs" />
+    <Compile Include="Navigation\NavigationService.cs" />
+    <Compile Include="Pages\FlowPage.xaml.cs">
+      <DependentUpon>FlowPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LogPage.xaml.cs">
+      <DependentUpon>LogPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UserPreferencesPage.xaml.cs">
+      <DependentUpon>UserPreferencesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TaskPage.xaml.cs">
+      <DependentUpon>TaskPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AutoCloseMessageBoxService.cs" />
+    <Compile Include="Services\FFmpegService.cs" />
+    <Compile Include="Services\LoadDependenciesService.cs" />
+    <Compile Include="Services\ProjectJsonConfig.cs" />
+    <Compile Include="Services\WindowWrapper.cs" />
+    <Compile Include="UserControls\CronExpressionEditor.xaml.cs">
+      <DependentUpon>CronExpressionEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchTextBoxControl.xaml.cs">
+      <DependentUpon>SearchTextBoxControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\PackageItem.cs" />
+    <Compile Include="ViewModel\RegisterViewModel.cs" />
+    <Compile Include="ViewModel\ScheduledTaskInfo.cs" />
+    <Compile Include="ViewModel\StartupViewModel.cs" />
+    <Compile Include="ViewModel\FlowViewModel.cs" />
+    <Compile Include="ViewModel\TaskFormViewModel.cs" />
+    <Compile Include="ViewModel\TaskViewModel.cs" />
+    <Compile Include="ViewModel\UserPreferencesViewModel.cs" />
+    <Compile Include="ViewModel\ViewModelLocator.cs" />
+    <Compile Include="Windows\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\RegisterWindow.xaml.cs">
+      <DependentUpon>RegisterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\StartupWindow.xaml.cs">
+      <DependentUpon>StartupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\TaskEditWindow.xaml.cs">
+      <DependentUpon>TaskEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\UserPreferencesWindow.xaml.cs">
+      <DependentUpon>UserPreferencesWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Pages\FlowPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UserPreferencesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TaskPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Global.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\CronExpressionEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\SearchTextBoxControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\StartupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\TaskEditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\UserPreferencesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Config\RPARobot.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>RPARobot.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="database.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="README.md" />
+    <None Include="Resources\key\verify.public.rsa.pem" />
+    <None Include="RPARobot.Log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Main\refresh.png" />
+    <Resource Include="Resources\Image\Main\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Ico\RPARobot.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Main\logs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Main\search-clear.png" />
+    <Resource Include="Resources\Image\Main\search-magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Main\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Main\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Main\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Main\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Plugins.Shared.Library\Plugins.Shared.Library.csproj">
+      <Project>{6879c801-1124-477a-97d8-0961e6d710b2}</Project>
+      <Name>Plugins.Shared.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoClosingMessageBox">
+      <Version>1.0.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Cronos">
+      <Version>0.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="Extended.Wpf.Toolkit">
+      <Version>3.8.1</Version>
+    </PackageReference>
+    <PackageReference Include="Hardcodet.Wpf.TaskbarNotification">
+      <Version>1.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="HighlightableTextBlock">
+      <Version>1.0.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="log4net">
+      <Version>2.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Mapster">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.Sqlite">
+      <Version>3.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Web.Xdt">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="MvvmLight">
+      <Version>5.4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="NuGet.Core">
+      <Version>2.14.0</Version>
+    </PackageReference>
+    <PackageReference Include="Quartz">
+      <Version>3.0.7</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Image\Main\flow.png" />
+    <Resource Include="Resources\Image\Main\record.png" />
+    <Resource Include="Resources\Image\Main\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ffmpeg.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Selenium.WebDriver\chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Selenium.WebDriver\geckodriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Selenium.WebDriver\IEDriverServer.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tables_sqlite.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

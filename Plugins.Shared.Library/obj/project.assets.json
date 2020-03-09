@@ -1,0 +1,3085 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "AvalonEdit/6.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.8.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "FlaUI.Core/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "PresentationCore",
+          "PresentationFramework",
+          "System.IO.Compression",
+          "System.Management",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.Core.dll": {}
+        }
+      },
+      "FlaUI.UIA2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationClient",
+          "UIAutomationTypes",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.UIA2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.UIA2.dll": {}
+        }
+      },
+      "FlaUI.UIA3/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0",
+          "Interop.UIAutomationClient": "10.18362.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.UIA3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.UIA3.dll": {}
+        }
+      },
+      "Interop.UIAutomationClient/10.18362.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Interop.UIAutomationClient.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Interop.UIAutomationClient.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.CodeAnalysis/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "[1.3.2]",
+          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "[1.3.2]"
+        }
+      },
+      "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "Microsoft.CodeAnalysis.Common/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Analyzers": "1.1.0",
+          "System.Collections.Immutable": "1.1.37",
+          "System.Reflection.Metadata": "1.2.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "[1.3.2]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "1.3.2"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VisualBasic": "[1.3.2]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.Workspaces.Common/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[1.3.2]",
+          "Microsoft.Composition": "1.0.27"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll": {},
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll": {},
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.Composition/1.0.27": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NuGet.Common/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Frameworks": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Common.dll": {}
+        }
+      },
+      "NuGet.Configuration/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Common": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.Security",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Configuration.dll": {}
+        }
+      },
+      "NuGet.Frameworks/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NuGet.Frameworks.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NuGet.Packaging/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Common": "4.5.3",
+          "NuGet.Packaging.Core": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Packaging.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Packaging.dll": {}
+        }
+      },
+      "NuGet.Packaging.Core/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Common": "4.5.3",
+          "NuGet.Frameworks": "4.5.3",
+          "NuGet.Versioning": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Packaging.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Packaging.Core.dll": {}
+        }
+      },
+      "NuGet.Protocol/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Configuration": "4.5.3",
+          "NuGet.Packaging": "4.5.3",
+          "System.Runtime.InteropServices": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.IdentityModel",
+          "System.Net.Http",
+          "System.Net.Http.WebRequest",
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Protocol.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Protocol.dll": {}
+        }
+      },
+      "NuGet.Resolver/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Protocol": "4.5.3"
+        },
+        "compile": {
+          "lib/net45/NuGet.Resolver.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Resolver.dll": {}
+        }
+      },
+      "NuGet.Versioning/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NuGet.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Versioning.dll": {}
+        }
+      },
+      "System.Collections/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Collections.Immutable/1.1.37": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.0",
+          "System.Globalization": "4.0.0",
+          "System.Linq": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Runtime.Extensions": "4.0.0",
+          "System.Threading": "4.0.0"
+        },
+        "compile": {
+          "lib/dotnet/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.Diagnostics.Debug/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Globalization/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Linq/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Management/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Management"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net45/_._": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Reflection.Metadata/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "1.1.37"
+        },
+        "compile": {
+          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+        }
+      },
+      "System.Resources.ResourceManager/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.Extensions/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.InteropServices/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Threading/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win": {
+      "AvalonEdit/6.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.8.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "FlaUI.Core/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "PresentationCore",
+          "PresentationFramework",
+          "System.IO.Compression",
+          "System.Management",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.Core.dll": {}
+        }
+      },
+      "FlaUI.UIA2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationClient",
+          "UIAutomationTypes",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.UIA2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.UIA2.dll": {}
+        }
+      },
+      "FlaUI.UIA3/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0",
+          "Interop.UIAutomationClient": "10.18362.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.UIA3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.UIA3.dll": {}
+        }
+      },
+      "Interop.UIAutomationClient/10.18362.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Interop.UIAutomationClient.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Interop.UIAutomationClient.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.CodeAnalysis/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "[1.3.2]",
+          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "[1.3.2]"
+        }
+      },
+      "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "Microsoft.CodeAnalysis.Common/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Analyzers": "1.1.0",
+          "System.Collections.Immutable": "1.1.37",
+          "System.Reflection.Metadata": "1.2.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "[1.3.2]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "1.3.2"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VisualBasic": "[1.3.2]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.Workspaces.Common/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[1.3.2]",
+          "Microsoft.Composition": "1.0.27"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll": {},
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll": {},
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.Composition/1.0.27": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NuGet.Common/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Frameworks": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Common.dll": {}
+        }
+      },
+      "NuGet.Configuration/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Common": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.Security",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Configuration.dll": {}
+        }
+      },
+      "NuGet.Frameworks/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NuGet.Frameworks.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NuGet.Packaging/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Common": "4.5.3",
+          "NuGet.Packaging.Core": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Packaging.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Packaging.dll": {}
+        }
+      },
+      "NuGet.Packaging.Core/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Common": "4.5.3",
+          "NuGet.Frameworks": "4.5.3",
+          "NuGet.Versioning": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Packaging.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Packaging.Core.dll": {}
+        }
+      },
+      "NuGet.Protocol/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Configuration": "4.5.3",
+          "NuGet.Packaging": "4.5.3",
+          "System.Runtime.InteropServices": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.IdentityModel",
+          "System.Net.Http",
+          "System.Net.Http.WebRequest",
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Protocol.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Protocol.dll": {}
+        }
+      },
+      "NuGet.Resolver/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Protocol": "4.5.3"
+        },
+        "compile": {
+          "lib/net45/NuGet.Resolver.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Resolver.dll": {}
+        }
+      },
+      "NuGet.Versioning/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NuGet.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Versioning.dll": {}
+        }
+      },
+      "System.Collections/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Collections.Immutable/1.1.37": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.0",
+          "System.Globalization": "4.0.0",
+          "System.Linq": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Runtime.Extensions": "4.0.0",
+          "System.Threading": "4.0.0"
+        },
+        "compile": {
+          "lib/dotnet/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.Diagnostics.Debug/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Globalization/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Linq/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Management/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Management"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "runtimes/win/lib/net45/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "1.1.37"
+        },
+        "compile": {
+          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+        }
+      },
+      "System.Resources.ResourceManager/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.Extensions/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.InteropServices/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Threading/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x64": {
+      "AvalonEdit/6.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.8.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "FlaUI.Core/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "PresentationCore",
+          "PresentationFramework",
+          "System.IO.Compression",
+          "System.Management",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.Core.dll": {}
+        }
+      },
+      "FlaUI.UIA2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationClient",
+          "UIAutomationTypes",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.UIA2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.UIA2.dll": {}
+        }
+      },
+      "FlaUI.UIA3/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0",
+          "Interop.UIAutomationClient": "10.18362.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.UIA3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.UIA3.dll": {}
+        }
+      },
+      "Interop.UIAutomationClient/10.18362.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Interop.UIAutomationClient.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Interop.UIAutomationClient.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.CodeAnalysis/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "[1.3.2]",
+          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "[1.3.2]"
+        }
+      },
+      "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "Microsoft.CodeAnalysis.Common/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Analyzers": "1.1.0",
+          "System.Collections.Immutable": "1.1.37",
+          "System.Reflection.Metadata": "1.2.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "[1.3.2]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "1.3.2"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VisualBasic": "[1.3.2]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.Workspaces.Common/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[1.3.2]",
+          "Microsoft.Composition": "1.0.27"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll": {},
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll": {},
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.Composition/1.0.27": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NuGet.Common/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Frameworks": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Common.dll": {}
+        }
+      },
+      "NuGet.Configuration/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Common": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.Security",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Configuration.dll": {}
+        }
+      },
+      "NuGet.Frameworks/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NuGet.Frameworks.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NuGet.Packaging/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Common": "4.5.3",
+          "NuGet.Packaging.Core": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Packaging.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Packaging.dll": {}
+        }
+      },
+      "NuGet.Packaging.Core/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Common": "4.5.3",
+          "NuGet.Frameworks": "4.5.3",
+          "NuGet.Versioning": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Packaging.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Packaging.Core.dll": {}
+        }
+      },
+      "NuGet.Protocol/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Configuration": "4.5.3",
+          "NuGet.Packaging": "4.5.3",
+          "System.Runtime.InteropServices": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.IdentityModel",
+          "System.Net.Http",
+          "System.Net.Http.WebRequest",
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Protocol.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Protocol.dll": {}
+        }
+      },
+      "NuGet.Resolver/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Protocol": "4.5.3"
+        },
+        "compile": {
+          "lib/net45/NuGet.Resolver.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Resolver.dll": {}
+        }
+      },
+      "NuGet.Versioning/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NuGet.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Versioning.dll": {}
+        }
+      },
+      "System.Collections/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Collections.Immutable/1.1.37": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.0",
+          "System.Globalization": "4.0.0",
+          "System.Linq": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Runtime.Extensions": "4.0.0",
+          "System.Threading": "4.0.0"
+        },
+        "compile": {
+          "lib/dotnet/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.Diagnostics.Debug/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Globalization/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Linq/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Management/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Management"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "1.1.37"
+        },
+        "compile": {
+          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+        }
+      },
+      "System.Resources.ResourceManager/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.Extensions/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.InteropServices/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Threading/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x86": {
+      "AvalonEdit/6.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Windows.Forms"
+        ],
+        "compile": {
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ICSharpCode.AvalonEdit.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.8.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "FlaUI.Core/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Management": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "PresentationCore",
+          "PresentationFramework",
+          "System.IO.Compression",
+          "System.Management",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.Core.dll": {}
+        }
+      },
+      "FlaUI.UIA2/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0"
+        },
+        "frameworkAssemblies": [
+          "UIAutomationClient",
+          "UIAutomationTypes",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.UIA2.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.UIA2.dll": {}
+        }
+      },
+      "FlaUI.UIA3/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FlaUI.Core": "3.0.0",
+          "Interop.UIAutomationClient": "10.18362.0"
+        },
+        "frameworkAssemblies": [
+          "Accessibility",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net45/FlaUI.UIA3.dll": {}
+        },
+        "runtime": {
+          "lib/net45/FlaUI.UIA3.dll": {}
+        }
+      },
+      "Interop.UIAutomationClient/10.18362.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Interop.UIAutomationClient.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Interop.UIAutomationClient.dll": {}
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.CodeAnalysis/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "[1.3.2]",
+          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "[1.3.2]"
+        }
+      },
+      "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System"
+        ]
+      },
+      "Microsoft.CodeAnalysis.Common/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Analyzers": "1.1.0",
+          "System.Collections.Immutable": "1.1.37",
+          "System.Reflection.Metadata": "1.2.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "[1.3.2]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "1.3.2"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.VisualBasic": "[1.3.2]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[1.3.2]"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.Workspaces.Common/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[1.3.2]",
+          "Microsoft.Composition": "1.0.27"
+        },
+        "compile": {
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll": {},
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll": {},
+          "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll": {}
+        }
+      },
+      "Microsoft.Composition/1.0.27": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll": {},
+          "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NuGet.Common/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Frameworks": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.Core",
+          "System.IO.Compression"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Common.dll": {}
+        }
+      },
+      "NuGet.Configuration/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Common": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.Security",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Configuration.dll": {}
+        }
+      },
+      "NuGet.Frameworks/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NuGet.Frameworks.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Frameworks.dll": {}
+        }
+      },
+      "NuGet.Packaging/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Common": "4.5.3",
+          "NuGet.Packaging.Core": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Packaging.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Packaging.dll": {}
+        }
+      },
+      "NuGet.Packaging.Core/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Common": "4.5.3",
+          "NuGet.Frameworks": "4.5.3",
+          "NuGet.Versioning": "4.5.3"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Packaging.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Packaging.Core.dll": {}
+        }
+      },
+      "NuGet.Protocol/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "NuGet.Configuration": "4.5.3",
+          "NuGet.Packaging": "4.5.3",
+          "System.Runtime.InteropServices": "4.3.0"
+        },
+        "frameworkAssemblies": [
+          "System.IO.Compression",
+          "System.IdentityModel",
+          "System.Net.Http",
+          "System.Net.Http.WebRequest",
+          "System.ServiceModel"
+        ],
+        "compile": {
+          "lib/net45/NuGet.Protocol.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Protocol.dll": {}
+        }
+      },
+      "NuGet.Resolver/4.5.3": {
+        "type": "package",
+        "dependencies": {
+          "NuGet.Protocol": "4.5.3"
+        },
+        "compile": {
+          "lib/net45/NuGet.Resolver.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Resolver.dll": {}
+        }
+      },
+      "NuGet.Versioning/4.5.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/NuGet.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/net45/NuGet.Versioning.dll": {}
+        }
+      },
+      "System.Collections/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Collections.Immutable/1.1.37": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.0",
+          "System.Globalization": "4.0.0",
+          "System.Linq": "4.0.0",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.0",
+          "System.Runtime.Extensions": "4.0.0",
+          "System.Threading": "4.0.0"
+        },
+        "compile": {
+          "lib/dotnet/System.Collections.Immutable.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Collections.Immutable.dll": {}
+        }
+      },
+      "System.Diagnostics.Debug/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Globalization/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Linq/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Management/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Management"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "1.1.37"
+        },
+        "compile": {
+          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
+        }
+      },
+      "System.Resources.ResourceManager/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.Extensions/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Runtime.InteropServices/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "System.Threading/4.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AvalonEdit/6.0.1": {
+      "sha512": "JmRwKMDRUUkUGLQmTtIHiSgFSQH9567b2/55Wa/gQp+ZtxQN+mnl5Qt6B/Kgz56FMnnDyE/fV23r7J2SV+NP7g==",
+      "type": "package",
+      "path": "avalonedit/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "avalonedit.6.0.1.nupkg.sha512",
+        "avalonedit.nuspec",
+        "lib/net40/ICSharpCode.AvalonEdit.dll",
+        "lib/net40/ICSharpCode.AvalonEdit.xml",
+        "lib/net45/ICSharpCode.AvalonEdit.dll",
+        "lib/net45/ICSharpCode.AvalonEdit.xml",
+        "lib/netcoreapp3.0/ICSharpCode.AvalonEdit.dll",
+        "lib/netcoreapp3.0/ICSharpCode.AvalonEdit.xml"
+      ]
+    },
+    "Extended.Wpf.Toolkit/3.8.1": {
+      "sha512": "eSD4/BY/xV29KaQi9A65VscpeU3rSrlvadIUepSx5ukeUajW3ph8+n4AlOswRMszbD4DDmrJ4g5O51bCUpiOjw==",
+      "type": "package",
+      "path": "extended.wpf.toolkit/3.8.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "extended.wpf.toolkit.3.8.1.nupkg.sha512",
+        "extended.wpf.toolkit.nuspec",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "lib/net40/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
+        "tools/install.ps1"
+      ]
+    },
+    "FlaUI.Core/3.0.0": {
+      "sha512": "VbAMxD9V/P1FZHyZcEFDV/j1wqv3h8kNARIMy9OD6rEkflVGXoOyEA78gPgCWARlQFFI8hyjkn2kr8QLvx3P3w==",
+      "type": "package",
+      "path": "flaui.core/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "FlaUI.png",
+        "LICENSE.txt",
+        "flaui.core.3.0.0.nupkg.sha512",
+        "flaui.core.nuspec",
+        "lib/net35/FlaUI.Core.dll",
+        "lib/net35/FlaUI.Core.xml",
+        "lib/net40/FlaUI.Core.dll",
+        "lib/net40/FlaUI.Core.xml",
+        "lib/net45/FlaUI.Core.dll",
+        "lib/net45/FlaUI.Core.xml",
+        "lib/netcoreapp3.0/FlaUI.Core.dll",
+        "lib/netcoreapp3.0/FlaUI.Core.xml",
+        "lib/netstandard2.0/FlaUI.Core.dll",
+        "lib/netstandard2.0/FlaUI.Core.xml"
+      ]
+    },
+    "FlaUI.UIA2/3.0.0": {
+      "sha512": "sjultNVX4GxWROFtPEdjKRtqUkY93ZsI2tVxDN0aIHoexb+RZAN/Tl45OtmHigCTgiFaGcGfPo/kWjTI7DpboA==",
+      "type": "package",
+      "path": "flaui.uia2/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "FlaUI.png",
+        "LICENSE.txt",
+        "flaui.uia2.3.0.0.nupkg.sha512",
+        "flaui.uia2.nuspec",
+        "lib/net35/FlaUI.UIA2.dll",
+        "lib/net35/FlaUI.UIA2.xml",
+        "lib/net40/FlaUI.UIA2.dll",
+        "lib/net40/FlaUI.UIA2.xml",
+        "lib/net45/FlaUI.UIA2.dll",
+        "lib/net45/FlaUI.UIA2.xml",
+        "lib/net471/FlaUI.UIA2.dll",
+        "lib/net471/FlaUI.UIA2.xml",
+        "lib/net48/FlaUI.UIA2.dll",
+        "lib/net48/FlaUI.UIA2.xml",
+        "lib/netcoreapp3.0/FlaUI.UIA2.dll",
+        "lib/netcoreapp3.0/FlaUI.UIA2.xml"
+      ]
+    },
+    "FlaUI.UIA3/3.0.0": {
+      "sha512": "Yc9XydWfrVnG9na/TkYjtT/NoBucWNEvtWtLlfSI4ZYNywzeyVJtKE+RT3lEZGGup1WbnlAFAaCtgm95B46H1g==",
+      "type": "package",
+      "path": "flaui.uia3/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "FlaUI.png",
+        "LICENSE.txt",
+        "flaui.uia3.3.0.0.nupkg.sha512",
+        "flaui.uia3.nuspec",
+        "lib/net35/FlaUI.UIA3.dll",
+        "lib/net35/FlaUI.UIA3.xml",
+        "lib/net40/FlaUI.UIA3.dll",
+        "lib/net40/FlaUI.UIA3.xml",
+        "lib/net45/FlaUI.UIA3.dll",
+        "lib/net45/FlaUI.UIA3.xml",
+        "lib/netcoreapp3.0/FlaUI.UIA3.dll",
+        "lib/netcoreapp3.0/FlaUI.UIA3.xml",
+        "lib/netstandard2.0/FlaUI.UIA3.dll",
+        "lib/netstandard2.0/FlaUI.UIA3.xml"
+      ]
+    },
+    "Interop.UIAutomationClient/10.18362.0": {
+      "sha512": "04PLTAyrU7TU/i0ak3HFLkMU0Sk/K9qSE2lsQwVms8NtF8o/EV1C7ANODIwuVxi473lRoWODVyZqGafnzKDucQ==",
+      "type": "package",
+      "path": "interop.uiautomationclient/10.18362.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/Interop.UIAutomationClient.targets",
+        "interop.uiautomationclient.10.18362.0.nupkg.sha512",
+        "interop.uiautomationclient.nuspec",
+        "lib/net35/Interop.UIAutomationClient.dll",
+        "lib/net40/Interop.UIAutomationClient.dll",
+        "lib/net45/Interop.UIAutomationClient.dll",
+        "lib/netcoreapp3.0/Interop.UIAutomationClient.dll",
+        "lib/netstandard2.0/Interop.UIAutomationClient.dll",
+        "tools/install.ps1"
+      ]
+    },
+    "Microsoft.CodeAnalysis/1.3.2": {
+      "sha512": "vXIxbtQimgOiU20b1wAiUM9eYAmYkpgkoAf7RxkFpf9FfJksZjk3mfLC+75SURZW1nLVR7yTkQP8Kkk0Y1wlkg==",
+      "type": "package",
+      "path": "microsoft.codeanalysis/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "microsoft.codeanalysis.1.3.2.nupkg.sha512",
+        "microsoft.codeanalysis.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
+      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.analyzers/1.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "analyzers/dotnet/cs/Microsoft.CodeAnalysis.Analyzers.dll",
+        "analyzers/dotnet/cs/Microsoft.CodeAnalysis.CSharp.Analyzers.dll",
+        "analyzers/dotnet/vb/Microsoft.CodeAnalysis.Analyzers.dll",
+        "analyzers/dotnet/vb/Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll",
+        "microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
+        "microsoft.codeanalysis.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.CodeAnalysis.Common/1.3.2": {
+      "sha512": "lOinFNbjpCvkeYQHutjKi+CfsjoKu88wAFT6hAumSR/XJSJmmVGvmnbzCWW8kUJnDVrw1RrcqS8BzgPMj263og==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.common/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "lib/net45/Microsoft.CodeAnalysis.dll",
+        "lib/net45/Microsoft.CodeAnalysis.xml",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.dll",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.xml",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.dll",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.xml",
+        "microsoft.codeanalysis.common.1.3.2.nupkg.sha512",
+        "microsoft.codeanalysis.common.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.CSharp/1.3.2": {
+      "sha512": "GrYMp6ScZDOMR0fNn/Ce6SegNVFw1G/QRT/8FiKv7lAP+V6lEZx9e42n0FvFUgjjcKgcEJOI4muU6i+3LSvOBA==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.csharp/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "lib/net45/Microsoft.CodeAnalysis.CSharp.dll",
+        "lib/net45/Microsoft.CodeAnalysis.CSharp.xml",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.xml",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.CSharp.dll",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.CSharp.xml",
+        "microsoft.codeanalysis.csharp.1.3.2.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.CSharp.Workspaces/1.3.2": {
+      "sha512": "MwGmrrPx3okEJuCogSn4TM3yTtJUDdmTt8RXpnjVo0dPund0YSAq4bHQQ9bxgArbrrapcopJmkb7UOLAvanXkg==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.csharp.workspaces/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "lib/net45/Microsoft.CodeAnalysis.CSharp.Workspaces.xml",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.Workspaces.xml",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.CSharp.Workspaces.xml",
+        "microsoft.codeanalysis.csharp.workspaces.1.3.2.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.workspaces.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.VisualBasic/1.3.2": {
+      "sha512": "yllH3rSYEc0bV15CJ2T9Jtx+tSXO5/OVNb+xofuWrACn65Q5VqeFBKgcbgwpyVY/98ypPcGQIWNQL2A/L1seJg==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.visualbasic/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "lib/net45/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "lib/net45/Microsoft.CodeAnalysis.VisualBasic.xml",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.xml",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.VisualBasic.xml",
+        "microsoft.codeanalysis.visualbasic.1.3.2.nupkg.sha512",
+        "microsoft.codeanalysis.visualbasic.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.VisualBasic.Workspaces/1.3.2": {
+      "sha512": "I5Z2WBgFsx0G22Na1uVFPDkT6Ob4XI+g91GPN8JWldYUMlmIBcUDBfGmfr8oQPdUipvThpaU1x1xZrnNwRR8JA==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.visualbasic.workspaces/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
+        "lib/net45/Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.VisualBasic.Workspaces.xml",
+        "microsoft.codeanalysis.visualbasic.workspaces.1.3.2.nupkg.sha512",
+        "microsoft.codeanalysis.visualbasic.workspaces.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.Workspaces.Common/1.3.2": {
+      "sha512": "kvdo+rkImlx5MuBgkayl4OV3Mg8/qirUdYgCIfQ9EqN15QasJFlQXmDAtCGqpkK9sYLLO/VK+y+4mvKjfh/FOA==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.workspaces.common/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.rtf",
+        "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.dll",
+        "lib/net45/Microsoft.CodeAnalysis.Workspaces.Desktop.xml",
+        "lib/net45/Microsoft.CodeAnalysis.Workspaces.dll",
+        "lib/net45/Microsoft.CodeAnalysis.Workspaces.xml",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.dll",
+        "lib/netstandard1.3/Microsoft.CodeAnalysis.Workspaces.xml",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.Workspaces.dll",
+        "lib/portable-net45+win8/Microsoft.CodeAnalysis.Workspaces.xml",
+        "microsoft.codeanalysis.workspaces.common.1.3.2.nupkg.sha512",
+        "microsoft.codeanalysis.workspaces.common.nuspec"
+      ]
+    },
+    "Microsoft.Composition/1.0.27": {
+      "sha512": "pwu80Ohe7SBzZ6i69LVdzowp6V+LaVRzd5F7A6QlD42vQkX0oT7KXKWWPlM/S00w1gnMQMRnEdbtOV12z6rXdQ==",
+      "type": "package",
+      "path": "microsoft.composition/1.0.27",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.XML",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.AttributedModel.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Convention.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.XML",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Hosting.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.XML",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.Runtime.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.XML",
+        "lib/portable-net45+win8+wp8+wpa81/System.Composition.TypedParts.dll",
+        "microsoft.composition.1.0.27.nupkg.sha512",
+        "microsoft.composition.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "NuGet.Common/4.5.3": {
+      "sha512": "BL+Sj4e+woWTGwYDX/CKwNxvfdDkOWUpgO76i4pn2mxqkYjxpQL+VilrxcunBLfUjkp/stYy1iDW0hQsHAwEeQ==",
+      "type": "package",
+      "path": "nuget.common/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NuGet.Common.dll",
+        "lib/net45/NuGet.Common.xml",
+        "lib/netstandard1.3/NuGet.Common.dll",
+        "lib/netstandard1.3/NuGet.Common.xml",
+        "nuget.common.4.5.3.nupkg.sha512",
+        "nuget.common.nuspec"
+      ]
+    },
+    "NuGet.Configuration/4.5.3": {
+      "sha512": "nolzuEARboh1O8CM1wnzDRRssU4fk7CvYlb3E9t8T8Ywhbb0N+Gzz86syFm7jJSoyqyy75571x6GYam+OSAfBQ==",
+      "type": "package",
+      "path": "nuget.configuration/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NuGet.Configuration.dll",
+        "lib/net45/NuGet.Configuration.xml",
+        "lib/netstandard1.3/NuGet.Configuration.dll",
+        "lib/netstandard1.3/NuGet.Configuration.xml",
+        "nuget.configuration.4.5.3.nupkg.sha512",
+        "nuget.configuration.nuspec"
+      ]
+    },
+    "NuGet.Frameworks/4.5.3": {
+      "sha512": "YYqhsWKoe3wG3KMTgc86j1DMXFKj7ioWFJsqfmUZq+oTm6C8kuMtmPyydvo7yjEVMv0hGuKWGBgNBPyy88TTHQ==",
+      "type": "package",
+      "path": "nuget.frameworks/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/NuGet.Frameworks.dll",
+        "lib/net40/NuGet.Frameworks.xml",
+        "lib/net45/NuGet.Frameworks.dll",
+        "lib/net45/NuGet.Frameworks.xml",
+        "lib/netstandard1.3/NuGet.Frameworks.dll",
+        "lib/netstandard1.3/NuGet.Frameworks.xml",
+        "nuget.frameworks.4.5.3.nupkg.sha512",
+        "nuget.frameworks.nuspec"
+      ]
+    },
+    "NuGet.Packaging/4.5.3": {
+      "sha512": "dPSZrhHIDdAsdEth7ABAoHjW9wo44NmN6ZHsttYkGqNTo2C33DxISMZrJTIQhcHTJnBMrRPiGts/oin3r4fUdg==",
+      "type": "package",
+      "path": "nuget.packaging/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NuGet.Packaging.dll",
+        "lib/net45/NuGet.Packaging.xml",
+        "lib/netstandard1.3/NuGet.Packaging.dll",
+        "lib/netstandard1.3/NuGet.Packaging.xml",
+        "nuget.packaging.4.5.3.nupkg.sha512",
+        "nuget.packaging.nuspec"
+      ]
+    },
+    "NuGet.Packaging.Core/4.5.3": {
+      "sha512": "Y353E84sTF1VtQd4GJv3TS2vpBEyl41Jc75Lf4R4FTd7Ri1vG+UxgVImZZ0MsAzVtgD+ZrA6xZhdS2XwgQipbg==",
+      "type": "package",
+      "path": "nuget.packaging.core/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NuGet.Packaging.Core.dll",
+        "lib/net45/NuGet.Packaging.Core.xml",
+        "lib/netstandard1.3/NuGet.Packaging.Core.dll",
+        "lib/netstandard1.3/NuGet.Packaging.Core.xml",
+        "nuget.packaging.core.4.5.3.nupkg.sha512",
+        "nuget.packaging.core.nuspec"
+      ]
+    },
+    "NuGet.Protocol/4.5.3": {
+      "sha512": "Gt9kO/30ArbUeUuS9ttSgrOjB+JM98EkC7mf7Y12fvvYCKIZEsSdDvFF6Yj+LSLfQ+1+I8H+gYSuu0sau8socQ==",
+      "type": "package",
+      "path": "nuget.protocol/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NuGet.Protocol.dll",
+        "lib/net45/NuGet.Protocol.xml",
+        "lib/netstandard1.3/NuGet.Protocol.dll",
+        "lib/netstandard1.3/NuGet.Protocol.xml",
+        "nuget.protocol.4.5.3.nupkg.sha512",
+        "nuget.protocol.nuspec"
+      ]
+    },
+    "NuGet.Resolver/4.5.3": {
+      "sha512": "VYOFygA9+QhOFW1lgY/5rbSIAqj+Zso8gHNngPYhHaFszCkdbpwxd6KsJpE1RfOkLEUeT6tV3Yet8r8pudvK/w==",
+      "type": "package",
+      "path": "nuget.resolver/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NuGet.Resolver.dll",
+        "lib/net45/NuGet.Resolver.xml",
+        "lib/netstandard1.3/NuGet.Resolver.dll",
+        "lib/netstandard1.3/NuGet.Resolver.xml",
+        "nuget.resolver.4.5.3.nupkg.sha512",
+        "nuget.resolver.nuspec"
+      ]
+    },
+    "NuGet.Versioning/4.5.3": {
+      "sha512": "9z7ixwTos6wMGoffmVtNYJEu+Ov2wt4rjl7UIz3owvUpPQ9IFTEwOw28SGo+ThTpLovOKQAgncRyY8jhCrKhmA==",
+      "type": "package",
+      "path": "nuget.versioning/4.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/NuGet.Versioning.dll",
+        "lib/net45/NuGet.Versioning.xml",
+        "lib/netstandard1.0/NuGet.Versioning.dll",
+        "lib/netstandard1.0/NuGet.Versioning.xml",
+        "nuget.versioning.4.5.3.nupkg.sha512",
+        "nuget.versioning.nuspec"
+      ]
+    },
+    "System.Collections/4.0.0": {
+      "sha512": "i2vsGDIEbWdHcUSNDPKZP/ZWod6o740el7mGTCy0dqbCxQh74W4QoC+klUwPEtGEFuvzJ7bJgvwJqscosVNyZQ==",
+      "type": "package",
+      "path": "system.collections/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/dotnet/System.Collections.dll",
+        "ref/dotnet/System.Collections.xml",
+        "ref/dotnet/de/System.Collections.xml",
+        "ref/dotnet/es/System.Collections.xml",
+        "ref/dotnet/fr/System.Collections.xml",
+        "ref/dotnet/it/System.Collections.xml",
+        "ref/dotnet/ja/System.Collections.xml",
+        "ref/dotnet/ko/System.Collections.xml",
+        "ref/dotnet/ru/System.Collections.xml",
+        "ref/dotnet/zh-hans/System.Collections.xml",
+        "ref/dotnet/zh-hant/System.Collections.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Collections.dll",
+        "ref/netcore50/System.Collections.xml",
+        "ref/netcore50/de/System.Collections.xml",
+        "ref/netcore50/es/System.Collections.xml",
+        "ref/netcore50/fr/System.Collections.xml",
+        "ref/netcore50/it/System.Collections.xml",
+        "ref/netcore50/ja/System.Collections.xml",
+        "ref/netcore50/ko/System.Collections.xml",
+        "ref/netcore50/ru/System.Collections.xml",
+        "ref/netcore50/zh-hans/System.Collections.xml",
+        "ref/netcore50/zh-hant/System.Collections.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "system.collections.4.0.0.nupkg.sha512",
+        "system.collections.nuspec"
+      ]
+    },
+    "System.Collections.Immutable/1.1.37": {
+      "sha512": "fTpqwZYBzoklTT+XjTRK8KxvmrGkYHzBiylCcKyQcxiOM8k+QvhNBxRvFHDWzy4OEP5f8/9n+xQ9mEgEXY+muA==",
+      "type": "package",
+      "path": "system.collections.immutable/1.1.37",
+      "files": [
+        ".nupkg.metadata",
+        "lib/dotnet/System.Collections.Immutable.dll",
+        "lib/dotnet/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.1.1.37.nupkg.sha512",
+        "system.collections.immutable.nuspec"
+      ]
+    },
+    "System.Diagnostics.Debug/4.0.0": {
+      "sha512": "AYJsLLGDVTC/nyURjgAo7Lpye0+HuSkcQujUf+NgQVdC/C/ky5NyamQHCforHJzgqspitMMtBe8B4UBdGXy1zQ==",
+      "type": "package",
+      "path": "system.diagnostics.debug/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/dotnet/System.Diagnostics.Debug.dll",
+        "ref/dotnet/System.Diagnostics.Debug.xml",
+        "ref/dotnet/de/System.Diagnostics.Debug.xml",
+        "ref/dotnet/es/System.Diagnostics.Debug.xml",
+        "ref/dotnet/fr/System.Diagnostics.Debug.xml",
+        "ref/dotnet/it/System.Diagnostics.Debug.xml",
+        "ref/dotnet/ja/System.Diagnostics.Debug.xml",
+        "ref/dotnet/ko/System.Diagnostics.Debug.xml",
+        "ref/dotnet/ru/System.Diagnostics.Debug.xml",
+        "ref/dotnet/zh-hans/System.Diagnostics.Debug.xml",
+        "ref/dotnet/zh-hant/System.Diagnostics.Debug.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Diagnostics.Debug.dll",
+        "ref/netcore50/System.Diagnostics.Debug.xml",
+        "ref/netcore50/de/System.Diagnostics.Debug.xml",
+        "ref/netcore50/es/System.Diagnostics.Debug.xml",
+        "ref/netcore50/fr/System.Diagnostics.Debug.xml",
+        "ref/netcore50/it/System.Diagnostics.Debug.xml",
+        "ref/netcore50/ja/System.Diagnostics.Debug.xml",
+        "ref/netcore50/ko/System.Diagnostics.Debug.xml",
+        "ref/netcore50/ru/System.Diagnostics.Debug.xml",
+        "ref/netcore50/zh-hans/System.Diagnostics.Debug.xml",
+        "ref/netcore50/zh-hant/System.Diagnostics.Debug.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "system.diagnostics.debug.4.0.0.nupkg.sha512",
+        "system.diagnostics.debug.nuspec"
+      ]
+    },
+    "System.Globalization/4.0.0": {
+      "sha512": "IBJyTo1y7ZtzzoJUA60T1XPvNTyw/wfFmjFoBFtlYfkekIOtD/AzDDIg0YdUa7eNtFEfliED2R7HdppTdU4t5A==",
+      "type": "package",
+      "path": "system.globalization/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/dotnet/System.Globalization.dll",
+        "ref/dotnet/System.Globalization.xml",
+        "ref/dotnet/de/System.Globalization.xml",
+        "ref/dotnet/es/System.Globalization.xml",
+        "ref/dotnet/fr/System.Globalization.xml",
+        "ref/dotnet/it/System.Globalization.xml",
+        "ref/dotnet/ja/System.Globalization.xml",
+        "ref/dotnet/ko/System.Globalization.xml",
+        "ref/dotnet/ru/System.Globalization.xml",
+        "ref/dotnet/zh-hans/System.Globalization.xml",
+        "ref/dotnet/zh-hant/System.Globalization.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Globalization.dll",
+        "ref/netcore50/System.Globalization.xml",
+        "ref/netcore50/de/System.Globalization.xml",
+        "ref/netcore50/es/System.Globalization.xml",
+        "ref/netcore50/fr/System.Globalization.xml",
+        "ref/netcore50/it/System.Globalization.xml",
+        "ref/netcore50/ja/System.Globalization.xml",
+        "ref/netcore50/ko/System.Globalization.xml",
+        "ref/netcore50/ru/System.Globalization.xml",
+        "ref/netcore50/zh-hans/System.Globalization.xml",
+        "ref/netcore50/zh-hant/System.Globalization.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "system.globalization.4.0.0.nupkg.sha512",
+        "system.globalization.nuspec"
+      ]
+    },
+    "System.Linq/4.0.0": {
+      "sha512": "r6Hlc+ytE6m/9UBr+nNRRdoJEWjoeQiT3L3lXYFDHoXk3VYsRBCDNXrawcexw7KPLaH0zamQLiAb6avhZ50cGg==",
+      "type": "package",
+      "path": "system.linq/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/dotnet/System.Linq.dll",
+        "lib/net45/_._",
+        "lib/netcore50/System.Linq.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "ref/dotnet/System.Linq.dll",
+        "ref/dotnet/System.Linq.xml",
+        "ref/dotnet/de/System.Linq.xml",
+        "ref/dotnet/es/System.Linq.xml",
+        "ref/dotnet/fr/System.Linq.xml",
+        "ref/dotnet/it/System.Linq.xml",
+        "ref/dotnet/ja/System.Linq.xml",
+        "ref/dotnet/ko/System.Linq.xml",
+        "ref/dotnet/ru/System.Linq.xml",
+        "ref/dotnet/zh-hans/System.Linq.xml",
+        "ref/dotnet/zh-hant/System.Linq.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Linq.dll",
+        "ref/netcore50/System.Linq.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "system.linq.4.0.0.nupkg.sha512",
+        "system.linq.nuspec"
+      ]
+    },
+    "System.Management/4.7.0": {
+      "sha512": "IY+uuGhgzWiCg21i8IvQeY/Z7m1tX8VuPF+ludfn7iTCaccTtJo5HkjZbBEL8kbBubKhAKKtNXr7uMtmAc28Pw==",
+      "type": "package",
+      "path": "system.management/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Management.dll",
+        "ref/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net45/_._",
+        "runtimes/win/lib/netcoreapp2.0/System.Management.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Management.xml",
+        "system.management.4.7.0.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Reflection.Metadata/1.2.0": {
+      "sha512": "ubQKFCNYPwhqPXPLjRKCvTDR2UvL5L5+Tm181D/5kl/df7264AuXDi2j2Bf5DxplBxevq8eUH9LRomcFCXTQKw==",
+      "type": "package",
+      "path": "system.reflection.metadata/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.1/System.Reflection.Metadata.dll",
+        "lib/netstandard1.1/System.Reflection.Metadata.xml",
+        "lib/portable-net45+win8/System.Reflection.Metadata.dll",
+        "lib/portable-net45+win8/System.Reflection.Metadata.xml",
+        "system.reflection.metadata.1.2.0.nupkg.sha512",
+        "system.reflection.metadata.nuspec"
+      ]
+    },
+    "System.Resources.ResourceManager/4.0.0": {
+      "sha512": "qmqeZ4BJgjfU+G2JbrZt4Dk1LsMxO4t+f/9HarNY6w8pBgweO6jT+cknUH7c3qIrGvyUqraBhU45Eo6UtA0fAw==",
+      "type": "package",
+      "path": "system.resources.resourcemanager/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/DNXCore50/System.Resources.ResourceManager.dll",
+        "lib/net45/_._",
+        "lib/netcore50/System.Resources.ResourceManager.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "ref/dotnet/System.Resources.ResourceManager.dll",
+        "ref/dotnet/System.Resources.ResourceManager.xml",
+        "ref/dotnet/de/System.Resources.ResourceManager.xml",
+        "ref/dotnet/es/System.Resources.ResourceManager.xml",
+        "ref/dotnet/fr/System.Resources.ResourceManager.xml",
+        "ref/dotnet/it/System.Resources.ResourceManager.xml",
+        "ref/dotnet/ja/System.Resources.ResourceManager.xml",
+        "ref/dotnet/ko/System.Resources.ResourceManager.xml",
+        "ref/dotnet/ru/System.Resources.ResourceManager.xml",
+        "ref/dotnet/zh-hans/System.Resources.ResourceManager.xml",
+        "ref/dotnet/zh-hant/System.Resources.ResourceManager.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Resources.ResourceManager.dll",
+        "ref/netcore50/System.Resources.ResourceManager.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Resources.ResourceManager.dll",
+        "system.resources.resourcemanager.4.0.0.nupkg.sha512",
+        "system.resources.resourcemanager.nuspec"
+      ]
+    },
+    "System.Runtime/4.0.0": {
+      "sha512": "Uq9epame8hEqJlj4KaWb67dDJvj4IM37jRFGVeFbugRdPz48bR0voyBhrbf3iSa2tAmlkg4lsa6BUOL9iwlMew==",
+      "type": "package",
+      "path": "system.runtime/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/dotnet/System.Runtime.dll",
+        "ref/dotnet/System.Runtime.xml",
+        "ref/dotnet/de/System.Runtime.xml",
+        "ref/dotnet/es/System.Runtime.xml",
+        "ref/dotnet/fr/System.Runtime.xml",
+        "ref/dotnet/it/System.Runtime.xml",
+        "ref/dotnet/ja/System.Runtime.xml",
+        "ref/dotnet/ko/System.Runtime.xml",
+        "ref/dotnet/ru/System.Runtime.xml",
+        "ref/dotnet/zh-hans/System.Runtime.xml",
+        "ref/dotnet/zh-hant/System.Runtime.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.xml",
+        "ref/netcore50/de/System.Runtime.xml",
+        "ref/netcore50/es/System.Runtime.xml",
+        "ref/netcore50/fr/System.Runtime.xml",
+        "ref/netcore50/it/System.Runtime.xml",
+        "ref/netcore50/ja/System.Runtime.xml",
+        "ref/netcore50/ko/System.Runtime.xml",
+        "ref/netcore50/ru/System.Runtime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "system.runtime.4.0.0.nupkg.sha512",
+        "system.runtime.nuspec"
+      ]
+    },
+    "System.Runtime.Extensions/4.0.0": {
+      "sha512": "zPzwoJcA7qar/b5Ihhzfcdr3vBOR8FIg7u//Qc5mqyAriasXuMFVraBZ5vOQq5asfun9ryNEL8Z2BOlUK5QRqA==",
+      "type": "package",
+      "path": "system.runtime.extensions/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/dotnet/System.Runtime.Extensions.dll",
+        "ref/dotnet/System.Runtime.Extensions.xml",
+        "ref/dotnet/de/System.Runtime.Extensions.xml",
+        "ref/dotnet/es/System.Runtime.Extensions.xml",
+        "ref/dotnet/fr/System.Runtime.Extensions.xml",
+        "ref/dotnet/it/System.Runtime.Extensions.xml",
+        "ref/dotnet/ja/System.Runtime.Extensions.xml",
+        "ref/dotnet/ko/System.Runtime.Extensions.xml",
+        "ref/dotnet/ru/System.Runtime.Extensions.xml",
+        "ref/dotnet/zh-hans/System.Runtime.Extensions.xml",
+        "ref/dotnet/zh-hant/System.Runtime.Extensions.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.Extensions.dll",
+        "ref/netcore50/System.Runtime.Extensions.xml",
+        "ref/netcore50/de/System.Runtime.Extensions.xml",
+        "ref/netcore50/es/System.Runtime.Extensions.xml",
+        "ref/netcore50/fr/System.Runtime.Extensions.xml",
+        "ref/netcore50/it/System.Runtime.Extensions.xml",
+        "ref/netcore50/ja/System.Runtime.Extensions.xml",
+        "ref/netcore50/ko/System.Runtime.Extensions.xml",
+        "ref/netcore50/ru/System.Runtime.Extensions.xml",
+        "ref/netcore50/zh-hans/System.Runtime.Extensions.xml",
+        "ref/netcore50/zh-hant/System.Runtime.Extensions.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "system.runtime.extensions.4.0.0.nupkg.sha512",
+        "system.runtime.extensions.nuspec"
+      ]
+    },
+    "System.Runtime.InteropServices/4.3.0": {
+      "sha512": "uv1ynXqiMK8mp1GM3jDqPCFN66eJ5w5XNomaK2XD+TuCroNTLFGeZ+WCmBMcBDyTFKou3P6cR6J/QsaqDp7fGQ==",
+      "type": "package",
+      "path": "system.runtime.interopservices/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.Runtime.InteropServices.dll",
+        "lib/net463/System.Runtime.InteropServices.dll",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.Runtime.InteropServices.dll",
+        "ref/net463/System.Runtime.InteropServices.dll",
+        "ref/netcore50/System.Runtime.InteropServices.dll",
+        "ref/netcore50/System.Runtime.InteropServices.xml",
+        "ref/netcore50/de/System.Runtime.InteropServices.xml",
+        "ref/netcore50/es/System.Runtime.InteropServices.xml",
+        "ref/netcore50/fr/System.Runtime.InteropServices.xml",
+        "ref/netcore50/it/System.Runtime.InteropServices.xml",
+        "ref/netcore50/ja/System.Runtime.InteropServices.xml",
+        "ref/netcore50/ko/System.Runtime.InteropServices.xml",
+        "ref/netcore50/ru/System.Runtime.InteropServices.xml",
+        "ref/netcore50/zh-hans/System.Runtime.InteropServices.xml",
+        "ref/netcore50/zh-hant/System.Runtime.InteropServices.xml",
+        "ref/netcoreapp1.1/System.Runtime.InteropServices.dll",
+        "ref/netstandard1.1/System.Runtime.InteropServices.dll",
+        "ref/netstandard1.1/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/de/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/es/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/fr/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/it/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/ja/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/ko/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/ru/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/zh-hans/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.1/zh-hant/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/System.Runtime.InteropServices.dll",
+        "ref/netstandard1.2/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/de/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/es/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/fr/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/it/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/ja/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/ko/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/ru/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/zh-hans/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.2/zh-hant/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/System.Runtime.InteropServices.dll",
+        "ref/netstandard1.3/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/de/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/es/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/fr/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/it/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/ja/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/ko/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/ru/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/System.Runtime.InteropServices.dll",
+        "ref/netstandard1.5/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/de/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/es/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/fr/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/it/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/ja/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/ko/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/ru/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.InteropServices.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.InteropServices.xml",
+        "ref/portable-net45+win8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.interopservices.4.3.0.nupkg.sha512",
+        "system.runtime.interopservices.nuspec"
+      ]
+    },
+    "System.Threading/4.0.0": {
+      "sha512": "H6O/9gUrjPDNYanh/7OFGAZHjVXvEuITD0RcnjfvIV04HOGrOPqUBU0kmz9RIX/7YGgCQn1o1S2DX6Cuv8kVGQ==",
+      "type": "package",
+      "path": "system.threading/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/dotnet/System.Threading.dll",
+        "ref/dotnet/System.Threading.xml",
+        "ref/dotnet/de/System.Threading.xml",
+        "ref/dotnet/es/System.Threading.xml",
+        "ref/dotnet/fr/System.Threading.xml",
+        "ref/dotnet/it/System.Threading.xml",
+        "ref/dotnet/ja/System.Threading.xml",
+        "ref/dotnet/ko/System.Threading.xml",
+        "ref/dotnet/ru/System.Threading.xml",
+        "ref/dotnet/zh-hans/System.Threading.xml",
+        "ref/dotnet/zh-hant/System.Threading.xml",
+        "ref/net45/_._",
+        "ref/netcore50/System.Threading.dll",
+        "ref/netcore50/System.Threading.xml",
+        "ref/netcore50/de/System.Threading.xml",
+        "ref/netcore50/es/System.Threading.xml",
+        "ref/netcore50/fr/System.Threading.xml",
+        "ref/netcore50/it/System.Threading.xml",
+        "ref/netcore50/ja/System.Threading.xml",
+        "ref/netcore50/ko/System.Threading.xml",
+        "ref/netcore50/ru/System.Threading.xml",
+        "ref/netcore50/zh-hans/System.Threading.xml",
+        "ref/netcore50/zh-hant/System.Threading.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "system.threading.4.0.0.nupkg.sha512",
+        "system.threading.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5.2": [
+      "AvalonEdit >= 6.0.1",
+      "Extended.Wpf.Toolkit >= 3.8.1",
+      "FlaUI.UIA2 >= 3.0.0",
+      "FlaUI.UIA3 >= 3.0.0",
+      "Microsoft.CodeAnalysis >= 1.3.2",
+      "Newtonsoft.Json >= 12.0.3",
+      "NuGet.Resolver >= 4.5.3",
+      "System.Reflection.Metadata >= 1.2.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\zenga\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\code\\MoRPA\\RPAStudio\\Plugins.Shared.Library\\Plugins.Shared.Library.csproj",
+      "projectName": "Plugins.Shared.Library",
+      "projectPath": "F:\\code\\MoRPA\\RPAStudio\\Plugins.Shared.Library\\Plugins.Shared.Library.csproj",
+      "packagesPath": "C:\\Users\\zenga\\.nuget\\packages\\",
+      "outputPath": "F:\\code\\MoRPA\\RPAStudio\\Plugins.Shared.Library\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\zenga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net452"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net452": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net452": {
+        "dependencies": {
+          "AvalonEdit": {
+            "target": "Package",
+            "version": "[6.0.1, )"
+          },
+          "Extended.Wpf.Toolkit": {
+            "target": "Package",
+            "version": "[3.8.1, )"
+          },
+          "FlaUI.UIA2": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "FlaUI.UIA3": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "Microsoft.CodeAnalysis": {
+            "target": "Package",
+            "version": "[1.3.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          },
+          "NuGet.Resolver": {
+            "target": "Package",
+            "version": "[4.5.3, )"
+          },
+          "System.Reflection.Metadata": {
+            "target": "Package",
+            "version": "[1.2.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

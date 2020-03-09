@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>Surviveplus.WpfLocalization</name>
+    </assembly>
+    <members>
+        <member name="T:Net.Surviveplus.Localization.WpfLocalization">
+            <summary>
+                <para>Localize WPF xaml element by using x:Uid attribute and resource files.</para>
+            </summary>
+        </member>
+        <member name="M:Net.Surviveplus.Localization.WpfLocalization.ApplyResources(System.Windows.DependencyObject,System.Resources.ResourceManager)">
+            <summary>
+                <para>Replace all properties in the UserControl with the texts, that are defined in the Resource by using x:Uid property.</para>
+            </summary>
+            <param name="userControl">
+                <para>Set the UserControl to localize texts.</para>
+            </param>
+            <param name="resourceManager">
+                <para>
+            Set the ResourceManager define the localized texts.
+            If you define &lt;Button x:Uid="formatButton" /&gt;  in XAML、then the resource's Name is formatButton.Content.
+            </para>
+            </param>
+            <remarks>
+                <para>For example, call the following code after InitializeComponent, in the constructor of .xaml.cs file.</para>
+                <para>
+            WpfLocalization.ApplyResources(this, Properties.Resources.ResourceManager);
+            </para>
+                <para>In this version, the following classes and properties are supported.</para>
+                <para>
+            TexBlock.Text, TextBox.Text, Button.Content, CheckBox.Content, RadioButton.Content, CheckBox.ToolTip, RadioButton.ToolTip.
+            </para>
+            </remarks>
+        </member>
+    </members>
+</doc>
